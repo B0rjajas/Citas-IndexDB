@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crm_IndexDB</title>
+</head>
+<body class="min-vh-100 bg-light"> <!-- Cambié "min-h-screen" a "min-vh-100" y "bg-gray-200" a "bg-light" -->
+    <div class="d-flex min-vh-100 align-items-top">
+        <aside class="md:w-40 lg:w-40 xl:w-20 bg-info px-5 py-10">
+            <h1 class="text-uppercase text-white fw-bold mt-2 fs-4  text-center mt-4">CRM - IndexedDB</h1> <!-- Corregí el texto dentro de <h1> -->
+            <p class="mt-2 text-white">Administra tus clientes con el CRM - IndexedDB</p> <!-- Agregué "el" antes de "CRM" -->
+            <nav class="mt-5">
+                <a href="/" class="btn btn-outline-light px-3 py-1 d-block mb-3">Clientes</a> <!-- Cambié "px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400" a clases de Bootstrap -->
+                <a href="nuevo-cliente.html" class="btn btn-outline-light px-3 py-1 d-block">Nuevo Cliente</a> <!-- Cambié "px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400" a clases de Bootstrap -->
+            </nav>    
+        </aside><!--Sidebar-->
+
+        <main class="md:w-60 lg:w-60 xl:w-80 px-5 py-10 bg-light">
+            <h2 class="text-center fs-3 fw-light m-4">Clientes</h2> <!-- Corregí "font-light" a "fw-light" -->
+            
+            <div class="mt-5 d-flex justify-content-center">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="px-6 py-3 border-bottom border-gray-200 text-start text-xs fw-medium text-gray-600 text-uppercase"> <!-- Corregí "wider" a "fw-medium" -->
+                                    Nombre Cliente
+                                </th>
+                                <th class="px-6 py-3 border-bottom border-gray-200 text-start text-xs fw-medium text-gray-600 text-uppercase"> <!-- Corregí "wider" a "fw-medium" -->
+                                    Teléfono
+                                </th>
+                                <th class="px-6 py-3 border-bottom border-gray-200 text-start text-xs fw-medium text-gray-600 text-uppercase"> <!-- Corregí "wider" a "fw-medium" -->
+                                    Empresa
+                                </th>
+                                <th class="px-6 py-3 border-bottom border-gray-200 text-start text-xs fw-medium text-gray-600 text-uppercase"> <!-- Corregí "wider" a "fw-medium" -->
+                                    Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="listado-clientes" class="bg-white"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
